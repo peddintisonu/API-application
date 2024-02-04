@@ -1,0 +1,80 @@
+/* Utility */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #fefedf;
+  text-align: center;
+  margin: 50px;
+}
+
+/* Container for joke cards  */
+.container {
+  width: 100vw;
+  height: 70vh;
+}
+
+/* Style for individual joke cards */
+.joke_card {
+  width: 29%;
+  height: 45%;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.joke_card_main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.joke_card:hover .joke_card_main {
+  transform: rotateY(180deg);
+}
+
+/* Position and style for the front and back sides of the card */
+.joke_card_front,
+.joke_card_back {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Styles for the front side of the card */
+.joke_card_front {
+  background-color: #c4fcef;
+  color: #008e9b;
+  border: 5px solid #2c73d2;
+  border-radius: 5px;
+}
+
+/* Styles for the back side of the cardskf */
+.joke_card_back {
+  background-color: #d5cabd;
+  color: #c34a36;
+  border: 5px solid #ff6f91;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+}
