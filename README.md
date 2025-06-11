@@ -1,2 +1,2 @@
-# Task-2
-Make a fork of this repo, add your Task one files and put them (not upload)
+# Random Jokes - API practice
+This repo is an example of API application in a small scale project
